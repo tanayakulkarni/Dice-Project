@@ -19,8 +19,10 @@ public class DiceHolder{
 		}
 	}
 	public String toString(){
-		int count=-1;
-		count++;
-		return "Dice #1: "+holder.get(count)+"\n";
+		String a= "";
+		for(int i=0; i<holder.size(); i++){
+			a+= "Die # "+(i+1)+":"+holder.get(i)+" \n";
+		}
+		return a;
 	}
 }

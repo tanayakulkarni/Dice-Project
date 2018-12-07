@@ -10,9 +10,9 @@ public class Die{
 		value = (int)(Math.random()*side)+1;
 	}
 
-	public Die(int side, int value){
+	public Die(int side){
 		this.side = side;
-		this.value = value;
+		value = (int)(Math.random()*side)+1;
 	}
 
 	public int getValue(){
